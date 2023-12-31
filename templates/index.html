@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proses Makanan</title>
+</head>
+<body>
+    <header>
+        <h1>Proses Makanan</h1>
+    </header>
+
+    <div class="container">
+        <section id="pesan">
+            <h2>1. Dimasak</h2>
+            <p>Pesan makanan favorit Anda sedang dimasak mohon ditunggu :)</p>
+            <button onclick="nextStep('masak')">Next</button>
+        </section>
+
+        <section id="masak">
+            <h2>2. Masakan Siap</h2>
+            <p>Makanan favorit anda sudah siap, mohon duduk dimeja :)</p>
+            <button onclick="nextStep('siap')">Next</button>
+        </section>
+
+        <section id="siap">
+            <h2>3. Masakan Diantar</h2>
+            <p>Makanan anda di antar ke meja yang sesuai nomor</p>
+            <button onclick="nextStep('antar')">Next</button>
+        </section>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
